@@ -32,7 +32,7 @@ class Auth extends CI_Controller
                     'breadcrumb1' => 'Dashboard',
                 ];
                 redirect('Admin/Dashboard', $data);
-            }else{
+            } else {
                 $this->session->set_flashdata('pesan', 'Username atau password tidak ditemukan.!');
                 redirect('Admin/Auth/');
             
